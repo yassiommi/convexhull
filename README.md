@@ -9,14 +9,14 @@ Email: ommiy@mcmaster.ca
     * [What is a Convex Hull?](#What-is-a-Convex-Hull?)
     * [Applications](#Applications)
 * [Algorithms](#Algorithms)
-    * [Gift-wrapping (Jarvis March)](#Gift-wrapping-(Jarvis-March))
+    * [Gift-wrapping (Jarvis March)](#gift-wrapping-jarvis-march)
     * [Quickhull](#Quickhull)
 * [Implementation](#Implementation)
-    * [Geometry Classes](#Geometry-Classes)
-    * [Utility Functions](Utility-Functions)
-    * [Visualization Functions](Visualization-Functions)
-    * [Bitmap Image Functions](Bitmap-Image-Functions)
-* [Running the Program](Running-the-Program)
+    * [Geometry Classes](#geometry-classes)
+    * [Utility Functions](utility-functions)
+    * [Visualization Functions](visualization-functions)
+    * [Bitmap Image Functions](bitmap-image-functions)
+* [Running the Program](running-the-program)
     
 ## Introduction 
 ### What is a Convex Hull?
