@@ -35,6 +35,8 @@ Quickhull is a divide-and-conquer algorithm for computing the convex hull of a f
 
 ## Implementation
 
+### Geometry Classes
+
 - **Point Class**
  ```Point```  is implemented to store a point in Cartesian coordinate system. It has two private variables ```x``` and ```y```, which can be accessed using the functions ```get_x()``` and ```get_y()``` respectively. ```distance_to(Point)``` can be used to calculate the distance between two points. ```==```, ```!=```, ```<<```, ```-```, and ```=``` operators are also overloaded for this class. A test script is provided to test the different functionalities of the class in ```tests/geometry.test```. A sample code to use the class is provided below:
 ```
@@ -78,7 +80,7 @@ int main() {
     // y = 2x + 3
     Point p1 = Point(1, 5);
     Point p2 = Point(5, 13);
-    Point p3;
+    Point p3; // (0,0)
     
     Line line = Line(p1, p2);
     
@@ -102,10 +104,51 @@ the distance between (0,0) and the line is: 1.34164
 (0,0) is on the left of the line
 ```
 
+### Utility Functions
 
+- **Generating Random Data**
+```generate_random_data_points(uint64_t count)``` is a function that generates ```count``` random points in the Cartesian coordinate system. The function returns a vector of ```Point``` objects. A sample code to use the class is provided below:
+```
+#include "utils.hpp"
 
+int main() {
+    std::vector<Point> data = generate_random_data_points(5);
+    cout << "Data points:" << endl;
+    for (vector<Point>::iterator it = data.begin(); it != data.end(); it++)
+        {
+            Point point = (Point)*it;
+            cout << point << endl;
+        }
+}
+```
+Output:
+```
+Data points:
+(0.737111, 0.628095)
+(0.388742, 0.585699)
+(0.844349, 0.967414)
+(0.332131, 0.130819)
+(0.66698, 0.928009)
+```
 
+- **hex and int Conversions**
+```hex_string_to_int(string)``` is a function that converts a hexadecimal string to an integer. ```int_to_hex_string(number)``` is a function that converts an integer to a hexadecimal string. A sample code to use the class is provided below:
+```
+#include "utils.hpp"
 
-
+int main() {
+    uint64_t number = 1234;
+    string hex = int_to_hex_string(number);
+    
+    cout << "1234 in hex is: " << hex << endl;
+    cout << hex << " in binary is: " << hex_string_to_binary_string(hex) << endl;
+    
+}
+```
+Output:
+```
+1234 in hex is: 000004D2
+000004D2 in binary is: \322
+```
 
 
