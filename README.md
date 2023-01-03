@@ -2,6 +2,7 @@
 # Convex Hull
 
 By Yassaman Ommi
+
 Email: ommiy@mcmaster.ca
 
 * [Introduction](#Introduction)
